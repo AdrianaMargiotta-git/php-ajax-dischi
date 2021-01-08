@@ -16,14 +16,17 @@
 
         <?php
             foreach ($database as $dischi){
-        ?>  
+        ?> 
             <div class="album">
-                <div class="copertina">
-                    <img src="<?php echo $dischi["poster"] ?>" alt="immagine di copertina non disponibile">
+                <div class="prova">
+                    <div class="copertina">
+                        <img src="<?php echo $dischi["poster"] ?>" alt="immagine di copertina non disponibile">
+                    </div>
+                    <h2 class="titolo"><?php echo $dischi["title"] ?></h2>
+                    <h3 class="autore"><?php echo $dischi["author"] ?></h3>
+                    <h3 class="anno"><?php echo $dischi["year"] ?></h3>
                 </div>
-                <h2 class="titolo"><?php echo $dischi["title"] ?></h2>
-                <h3 class="autore"><?php echo $dischi["author"] ?></h3>
-                <h3 class="anno"><?php echo $dischi["year"] ?></h3>
+                
             </div>
         <?php
             }
