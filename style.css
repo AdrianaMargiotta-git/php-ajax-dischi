@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    background-color: #1e2d3b;;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100vw / 3 - 20vh);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e3a46;;
+    border-radius: 5px;
+}
+
+.copertina{
+    width: 75%;
+    margin: auto;
+}
+
+.copertina img{
+    width: 200px;
+    height: 200px;
+}
+
+.titolo{
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.autore{
+    color: #808080;
+    margin-bottom: 4px;
+}
+
+.anno{
+    color: #808080;
+}
