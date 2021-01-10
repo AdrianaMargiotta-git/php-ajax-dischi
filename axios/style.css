@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* rules for header */
+header{
+    height: 80px;
+    background-color: #2e3a46;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+i{
+    padding: 0px 10px;
+}
+
+/* rules for main */
+main {
+    min-height: calc(100vh - 80px);
+    background-color: #1e2d3b;
+}
+
+
+ /* rules for main seleziona */
+.seleziona{
+    text-align: center;
+    color: #ffffff;
+}
+
+    /* rules for main dischi */
+.recordsList{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+    list-style: none;
+}
+
+.recordSingle{
+    flex-basis: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #2e3a46;
+}
+
+.dischi .recordsList .recordSingle .titolo{
+    color: #ffffff;
+    margin-bottom: 4px;
+    font-size: 1.3rem;
+}
+
+.dischi .recordsList .recordSingle .autore, .dischi .recordsList .recordSingle .anno{
+    color: #808080;
+    margin-bottom: 4px;
+}
