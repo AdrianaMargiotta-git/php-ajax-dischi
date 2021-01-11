@@ -20,27 +20,29 @@
 
         <main>
             <div class="seleziona">
-                <label for="autore">Filtra per autore</label>
-                <select v-model="singerAttuale" @change="selectSinger">
-                    <option value="All">All</option>
-                    <option value="Bon Jovi">Bon Jovi</option>
-                    <option value="Queen">Queen</option>
-                    <option value="Sting">Sting</option>
-                    <option value="Steve Gadd Band">Steve Gadd Band</option>
-                    <option value="Iron Maiden">Iron Maiden</option>
-                    <option value="Eric Clapton">Eric Clapton</option>
-                </select>
+                <!-- <button @click="all">CLEAR</button>
+                <button v-for="disco in dischi" @click="update(disco.author)">
+                    {{ disco.author }}
+                </button> -->
+
+                <button @click="all">All</button>
+                <button @click="update('Bon Jovi')">Bon Jovi</button>
+                <button @click="update('Queen')">Queen</button>
+                <button @click="update('Sting')">Sting</button>
+                <button @click="update('Steve Gadd Band')">Steve Gadd Band</button>
+                <button @click="update('Iron Maiden')">Iron Maiden</button>
+                <button @click="update('Eric Clapton')">Eric Clapton</button>
             </div>
 
             <div class="dischi">
                 <ul class="recordsList">
-                    <li v-for="record in database" class="recordSingle">
+                    <li v-for="disco in dischi" class="recordSingle">
                         <div>
-                            <img :src="record.poster" :alt="record.title">
+                            <img :src="disco.poster" :alt="disco.title">
                         </div>
-                        <h2 class="titolo">{{record.title}}</h2>
-                        <h3 class="autore">{{record.author}}</h3>
-                        <h3 class="anno">{{record.year}}</h3>
+                        <h2 class="titolo">{{disco.title}}</h2>
+                        <h3 class="autore">{{disco.author}}</h3>
+                        <h3 class="anno">{{disco.year}}</h3>
                     </li>
                 </ul>
             </div>
